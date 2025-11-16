@@ -1,0 +1,36 @@
+:root {
+  --green: #2ecc71;
+  --green-dark: #25a65a;
+  --red: #e74c3c;
+
+  --bg: #ffffff;
+  --card-bg: #f8f8f8;
+  --text: #2c3e50;
+  --text-light: #555;
+  --border: #e0e0e0;
+  --hover: #f1f1f1;
+
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* 🌙 Dark theme */
+body.dark {
+  --bg: #111;
+  --card-bg: #1a1a1a;
+  --text: #eeeeee;
+  --text-light: #bbbbbb;
+  --border: #333;
+  --hover: #222;
+
+  --green: #27ae60;
+  --green-dark: #1f8b4e;
+  --red: #ff6b6b;
+
+  --shadow-soft: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.25s ease;
+}

@@ -1,0 +1,21 @@
+.stats-card {
+  background: var(--card);
+  border: 1px solid var(--table-border);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stats-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

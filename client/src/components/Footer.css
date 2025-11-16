@@ -1,0 +1,2 @@
+.footer { padding:18px; text-align:center; color:var(--muted); border-top:1px solid var(--border); background:transparent; }
+.footer a { color:var(--accent); text-decoration:none; font-weight:600; }

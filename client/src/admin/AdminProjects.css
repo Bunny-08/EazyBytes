@@ -1,0 +1,28 @@
+.admin-projects-page {
+  display: flex;
+}
+
+.admin-projects-content {
+  margin-left: 240px;
+  padding: 2rem;
+  width: calc(100% - 240px);
+}
+
+.admin-projects-content h1 {
+  margin-bottom: 1rem;
+}
+
+.add-project-btn {
+  background: var(--green);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.add-project-btn:hover {
+  background: var(--green-dark);
+}

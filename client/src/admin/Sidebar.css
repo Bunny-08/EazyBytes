@@ -1,0 +1,83 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: var(--card-bg);
+  padding: 2rem 1.5rem;
+  border-right: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin-bottom: 1rem;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: var(--text);
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: block;
+  transition: 0.2s ease;
+}
+
+.sidebar-links a:hover {
+  background: var(--hover);
+}
+
+.sidebar-links .active {
+  background: var(--green);
+  color: white;
+}
+
+/* Logout button */
+.logout-btn {
+  margin-top: auto;
+  padding: 10px 14px;
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #cc3b2e;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  margin-top: 1rem;
+  padding: 10px 14px;
+  background: var(--green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--green-dark);
+}

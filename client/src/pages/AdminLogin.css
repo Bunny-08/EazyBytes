@@ -1,0 +1,28 @@
+/* Reuse global tokens */
+.admin-login {
+  max-width: 420px;
+  margin: 72px auto;
+  padding: 28px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.admin-login h1 { margin-bottom: 10px; font-weight:600; }
+.admin-login form { display:flex; flex-direction:column; gap:12px; margin-top:16px; }
+
+.admin-login input, .admin-login textarea {
+  width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border);
+  background: transparent; color: var(--text);
+  transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+.admin-login input:focus, .admin-login textarea:focus {
+  outline: none; border-color: rgba(22,163,74,0.18); box-shadow: 0 6px 18px rgba(22,163,74,0.08);
+}
+
+.btn-primary { width:100%; padding:12px; font-weight:600; }
+
+.register-link { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.register-link a { color: var(--accent); text-decoration:none; font-weight:600; }

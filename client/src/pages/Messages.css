@@ -1,0 +1,38 @@
+.messages-page {
+  display: flex;
+}
+
+.messages-content {
+  margin-left: 240px;
+  padding: 2rem;
+  width: calc(100% - 240px);
+}
+
+.messages-content h1 {
+  margin-bottom: 1.5rem;
+}
+
+.messages-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+.messages-table th {
+  padding: 14px;
+  background: var(--green);
+  color: white;
+  text-align: left;
+  border-radius: 6px 6px 0 0;
+}
+
+.messages-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.messages-table tr:hover {
+  background: var(--hover);
+}

@@ -1,0 +1,114 @@
+/* 🌿 Global table wrapper */
+.table-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+/* 📋 Table */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+/* Header */
+.dashboard-table thead th {
+  text-align: left;
+  padding: 12px 10px;
+  background: var(--green);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Rows */
+.dashboard-table tbody tr {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+/* Row hover */
+.dashboard-table tbody tr:hover {
+  background: var(--hover);
+}
+
+/* Cells */
+.dashboard-table td {
+  padding: 14px 10px;
+  color: var(--text);
+}
+
+/* Buttons */
+.table-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 6px;
+  transition: 0.2s ease;
+}
+
+/* Edit button */
+.table-btn:not(.ghost) {
+  background: var(--green);
+  color: white;
+}
+
+.table-btn:not(.ghost):hover {
+  background: var(--green-dark);
+}
+
+/* Delete button */
+.table-btn.ghost {
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.table-btn.ghost:hover {
+  background: var(--red);
+  color: white;
+}
+
+/* 🔥 Mobile responsiveness */
+@media (max-width: 600px) {
+  .dashboard-table thead {
+    display: none;
+  }
+
+  .dashboard-table,
+  .dashboard-table tbody,
+  .dashboard-table tr,
+  .dashboard-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .dashboard-table tr {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background: var(--card-bg);
+    padding: 10px;
+  }
+
+  .dashboard-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 4px;
+  }
+
+  .dashboard-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-light);
+  }
+}

@@ -1,0 +1,109 @@
+/* ------------------------------
+   NAVBAR WRAPPER
+------------------------------ */
+
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--bg);
+  color: var(--text);
+
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ------------------------------
+   BRAND
+------------------------------ */
+
+.nav-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* ------------------------------
+   NAV LINKS
+------------------------------ */
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.25s ease;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: var(--green);
+  color: white;
+}
+
+/* ------------------------------
+   ACTIVE LINK (optional)
+------------------------------ */
+
+.nav-links .active {
+  background: var(--green);
+  color: #fff;
+}
+
+/* ------------------------------
+   DARK MODE SUPPORT
+------------------------------ */
+
+body.dark .navbar {
+  background: var(--bg-dark);
+  color: var(--text);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+body.dark .nav-links a:hover {
+  background: var(--green-light);
+  color: #000;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 0.7rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+}

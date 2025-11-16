@@ -1,0 +1,48 @@
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+}
+
+.header-left h2 {
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.header-sub {
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  padding: 8px 14px;
+  background: var(--green);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.theme-toggle:hover {
+  background: var(--green-dark);
+}
+
+.admin-pill {
+  background: var(--green);
+  padding: 8px 14px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+}

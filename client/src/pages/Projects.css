@@ -1,0 +1,11 @@
+.contact { max-width:760px; margin:36px auto; padding:18px; }
+.contact h1 { margin-bottom:8px; }
+.contact-form { display:grid; gap:12px; grid-template-columns: 1fr 1fr; }
+.contact-form .form-row { grid-column: span 2; }
+.contact-form input, .contact-form textarea {
+  width:100%; padding:10px; border-radius:8px; border:1px solid var(--border); background:var(--card-bg);
+}
+.contact-subtext { color:var(--muted); margin-bottom:12px; }
+@media (max-width:720px) {
+  .contact-form { grid-template-columns: 1fr; }
+}
