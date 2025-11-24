@@ -24,7 +24,5 @@ app.get("/api", (_, res) => {
   res.send("✅ Vercel Express Backend Running");
 });
 
-// ❌ No app.listen()
-// Instead export handler for Vercel
 export const handler = serverless(app);
 export default app;
