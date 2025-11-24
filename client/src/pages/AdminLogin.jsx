@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/global.css";
-import "./adminlogin.css";
+import "./AdminLogin.css";
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
